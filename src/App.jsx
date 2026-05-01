@@ -1,4 +1,5 @@
-import Navbar from "./components/Navbar/Navbar"; // Con 'N' mayúscula al finalimport Hero from "./components/Hero/Hero"; 
+import Navbar from "./components/Navbar/Navbar"; // Con 'N' mayúscula al final
+import Hero from "./components/Hero/Hero"; 
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
 import Contacto from "./components/Contacto/Contacto"; // Nueva importación
