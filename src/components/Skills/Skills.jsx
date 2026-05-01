@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FaCode, FaDatabase, FaLayerGroup, FaChartBar, FaEdit, FaUserCheck } from "react-icons/fa";
-import styles from "./Skills.module.css";
+import styles from "./skills.module.css";
 
 export default function Skills() {
   const skillGroups = [
