@@ -18,7 +18,7 @@ const Tooltip = ({ text }) => (
 
 const projectsData = [
   {
-    title: "Proyecto Ecommerce Fullstack",
+    title: "Proyecto Ecommerce - AmericanRoss",
     description: "Solución integral de comercio electrónico que permite gestionar el catálogo y pedidos en un entorno seguro. Implementé interfaces dinámicas y responsivas, además de la lógica de negocio en el backend con Spring Boot.",
     tags: ["React", "Spring Boot", "PostgreSQL", "Docker", "Bootstrap"],
     techIcons: [

@@ -14,8 +14,7 @@ export default function Contacto() {
       >
         <h2 className={styles.title}>¿Hablamos de tecnología?</h2>
         <p className={styles.description}>
-          Disponible para proyectos de **Machine Learning**, **Frontend Moderno** 
-          y soluciones de **Automatización de Procesos**.
+          Disponible para Gestión de Proyectos TI, Desarrollo Web y Procesos Tecnológicos.
         </p>
 
         <div className={styles.grid}>
@@ -34,7 +33,7 @@ export default function Contacto() {
           </a>
 
           {/* GitHub */}
-          <a href="https://github.com/tu-usuario" target="_blank" rel="noreferrer" className={styles.card}>
+          <a href="https://github.com/LuiggiMejias-dev" target="_blank" rel="noreferrer" className={styles.card}>
             <FaGithub className={styles.icon} />
             <span>GitHub</span>
             <p>Proyectos y Código</p>
