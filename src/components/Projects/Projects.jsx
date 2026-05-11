@@ -47,7 +47,7 @@ const projectsData = [
     demo: "https://vitta-salud-y-bienestar.vercel.app/" 
   },
   {
-    title: "Proyecto Ecommerce - AmericanRoss",
+    title: "Ecommerce - AmericanRoss",
     description: "Solución integral de comercio electrónico para gestión de catálogos y pedidos. Implementé interfaces responsivas y la lógica de negocio en el backend, asegurando un entorno escalable y seguro.",
     tags: ["React", "Spring Boot", "PostgreSQL", "Docker", "Bootstrap"],
     techIcons: [
@@ -62,7 +62,7 @@ const projectsData = [
   },
   {
     title: "Diseño Web (UI) - Devdatep",
-    description: "Optimización de interfaces y creación de sistemas de diseño para soluciones digitales. Foco en la consistencia visual, usabilidad y desarrollo de componentes reutilizables bajo estándares profesionales.",
+    description: "Diseñé e implementé interfaces digitales enfocadas en usabilidad y consistencia visual. Estructuré sistemas de diseño mediante componentes reutilizables, transformando requerimientos complejos en soluciones funcionales dentro de entornos de colaboración remota.",
     tags: ["UI/UX Design", "Component Management", "Usability"],
     techIcons: [
       { icon: <FaPalette />, name: "UI Design" },
