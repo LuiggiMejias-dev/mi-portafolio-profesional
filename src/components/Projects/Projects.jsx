@@ -1,8 +1,23 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import styles from "./projects.module.css";
-import { FaExternalLinkAlt, FaGithub, FaShoppingCart, FaPalette } from "react-icons/fa";
-import { SiSpringboot, SiPostgresql, SiDocker, SiReact, SiBootstrap } from "react-icons/si";
+import { 
+  FaExternalLinkAlt, 
+  FaGithub, 
+  FaShoppingCart, 
+  FaPalette, 
+  FaLeaf 
+} from "react-icons/fa";
+import { 
+  SiSpringboot, 
+  SiPostgresql, 
+  SiDocker, 
+  SiReact, 
+  SiBootstrap, 
+  SiTailwindcss, 
+  SiVercel, 
+  SiFigma 
+} from "react-icons/si";
 
 // Componente pequeño para el Tooltip
 const Tooltip = ({ text }) => (
@@ -18,8 +33,22 @@ const Tooltip = ({ text }) => (
 
 const projectsData = [
   {
+    title: "Vitta – Salud y Bienestar",
+    description: "Ecosistema digital de salud desarrollado con un stack moderno enfocado en la escalabilidad. Implementé una lógica de componentes reutilizables y un módulo de reservas interactivo en tiempo real, logrando una interfaz tecnológica de baja latencia.",
+    tags: ["React", "Tailwind CSS v4", "Vercel", "UX/UI"],
+    techIcons: [
+      { icon: <SiReact />, name: "React (Vite)" },
+      { icon: <SiTailwindcss />, name: "Tailwind CSS v4" },
+      { icon: <SiVercel />, name: "Vercel" },
+      { icon: <SiFigma />, name: "Figma" }
+    ],
+    mainIcon: <FaLeaf />, 
+    github: "https://github.com/LuiggiMejias-dev/Vitta", 
+    demo: "https://vitta-salud-y-bienestar.vercel.app/" 
+  },
+  {
     title: "Proyecto Ecommerce - AmericanRoss",
-    description: "Solución integral de comercio electrónico que permite gestionar el catálogo y pedidos en un entorno seguro. Implementé interfaces dinámicas y responsivas, además de la lógica de negocio en el backend con Spring Boot.",
+    description: "Solución integral de comercio electrónico para gestión de catálogos y pedidos. Implementé interfaces responsivas y la lógica de negocio en el backend, asegurando un entorno escalable y seguro.",
     tags: ["React", "Spring Boot", "PostgreSQL", "Docker", "Bootstrap"],
     techIcons: [
       { icon: <SiReact />, name: "React" },
@@ -28,11 +57,12 @@ const projectsData = [
       { icon: <SiDocker />, name: "Docker" }
     ],
     mainIcon: <FaShoppingCart />,
-    link: "#" 
+    github: "#", 
+    demo: "#" 
   },
   {
-    title: "Practicante de Diseño Web (UI) - Devdatep",
-    description: "Diseño y optimización de interfaces web aplicadas a soluciones digitales. Creación de componentes visuales, asegurando la consistencia en estilos, tipografías y colores bajo principios de usabilidad.",
+    title: "Diseño Web (UI) - Devdatep",
+    description: "Optimización de interfaces y creación de sistemas de diseño para soluciones digitales. Foco en la consistencia visual, usabilidad y desarrollo de componentes reutilizables bajo estándares profesionales.",
     tags: ["UI/UX Design", "Component Management", "Usability"],
     techIcons: [
       { icon: <FaPalette />, name: "UI Design" },
@@ -40,7 +70,8 @@ const projectsData = [
       { icon: <SiBootstrap />, name: "Layouts" }
     ],
     mainIcon: <FaPalette />,
-    link: "#"
+    github: "#",
+    demo: "#"
   }
 ];
 
@@ -90,8 +121,24 @@ export default function Projects() {
               </div>
 
               <div className={styles.cardFooter}>
-                <a href={project.link} className={styles.iconLink} title="GitHub"><FaGithub /></a>
-                <a href={project.link} className={styles.iconLink} title="Demo"><FaExternalLinkAlt /></a>
+                <a 
+                  href={project.github} 
+                  target="_blank" 
+                  rel="noreferrer" 
+                  className={styles.iconLink} 
+                  title="GitHub"
+                >
+                  <FaGithub />
+                </a>
+                <a 
+                  href={project.demo} 
+                  target="_blank" 
+                  rel="noreferrer" 
+                  className={styles.iconLink} 
+                  title="Demo en Vivo"
+                >
+                  <FaExternalLinkAlt />
+                </a>
               </div>
             </motion.div>
           ))}
