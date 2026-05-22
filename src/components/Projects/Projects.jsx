@@ -6,7 +6,8 @@ import {
   FaGithub, 
   FaShoppingCart, 
   FaPalette, 
-  FaLeaf 
+  FaLeaf,
+  FaChartBar
 } from "react-icons/fa";
 import { 
   SiSpringboot, 
@@ -32,6 +33,19 @@ const Tooltip = ({ text }) => (
 );
 
 const projectsData = [
+  {
+    title: "Sistema POS – MiniMarket",
+    description: "Desarrollé un sistema POS (Punto de Venta) para la gestión automatizada de un minimarket. Implementé un motor de transacciones en tiempo real, control de inventarios con alertas inteligentes y un dashboard analítico para la toma de decisiones.",    tags: ["React", "Tailwind CSS", "Recharts", "Vercel"],
+    techIcons: [
+      { icon: <SiReact />, name: "React.js" },
+      { icon: <SiTailwindcss />, name: "Tailwind CSS" },
+      { icon: <FaChartBar />, name: "Recharts" },
+      { icon: <SiVercel />, name: "Vercel" }
+    ],
+    mainIcon: <FaChartBar />, 
+    github: "https://github.com/LuiggiMejias-dev/Minimarket",
+    demo: "https://minimarket-dev.vercel.app/" 
+  },
   {
     title: "Vitta – Salud y Bienestar",
     description: "Ecosistema digital de salud desarrollado con un stack moderno enfocado en la escalabilidad. Implementé una lógica de componentes reutilizables y un módulo de reservas interactivo en tiempo real, logrando una interfaz tecnológica de baja latencia.",
