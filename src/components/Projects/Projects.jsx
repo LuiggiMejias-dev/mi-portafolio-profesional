@@ -7,7 +7,8 @@ import {
   FaShoppingCart, 
   FaPalette, 
   FaLeaf,
-  FaChartBar
+  FaChartBar,
+  FaDumbbell
 } from "react-icons/fa";
 import { 
   SiSpringboot, 
@@ -34,8 +35,22 @@ const Tooltip = ({ text }) => (
 
 const projectsData = [
   {
+    title: "FitZone – Nutrición y Rendimiento",
+    description: "Plataforma web interactiva para un centro de entrenamiento y gimnasio premium. Diseñé una interfaz moderna con un módulo de productos integrado, el cual incluye un flujo de compra optimizado mediante modales, lógica de descuentos en tiempo real y pedidos directos por WhatsApp.",
+    tags: ["React (Vite)", "CSS Modules", "Dynamic Logic", "Vercel"],
+    techIcons: [
+      { icon: <SiReact />, name: "React (Vite)" },
+      { icon: <FaShoppingCart />, name: "CSS Modules" },
+      { icon: <SiVercel />, name: "Vercel" }
+    ],
+    mainIcon: <FaDumbbell />, 
+    github: "https://github.com/LuiggiMejias-dev/Gimnasio",
+    demo: "https://gimnasio-fitzone.vercel.app/" // Cambia esta URL por tu link real de Vercel
+  },
+  {
     title: "Sistema POS – MiniMarket",
-    description: "Desarrollé un sistema POS (Punto de Venta) para la gestión automatizada de un minimarket. Implementé un motor de transacciones en tiempo real, control de inventarios con alertas inteligentes y un dashboard analítico para la toma de decisiones.",    tags: ["React", "Tailwind CSS", "Recharts", "Vercel"],
+    description: "Desarrollé un sistema POS (Punto de Venta) para la gestión automatizada de un minimarket. Implementé un motor de transacciones en tiempo real, control de inventarios con alertas inteligentes y un dashboard analítico para la toma de decisiones.",
+    tags: ["React", "Tailwind CSS", "Recharts", "Vercel"],
     techIcons: [
       { icon: <SiReact />, name: "React.js" },
       { icon: <SiTailwindcss />, name: "Tailwind CSS" },
