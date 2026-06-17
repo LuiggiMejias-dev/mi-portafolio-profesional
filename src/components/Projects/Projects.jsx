@@ -8,7 +8,8 @@ import {
   FaPalette, 
   FaLeaf,
   FaChartBar,
-  FaDumbbell
+  FaDumbbell,
+  FaUtensils 
 } from "react-icons/fa";
 import { 
   SiSpringboot, 
@@ -18,7 +19,8 @@ import {
   SiBootstrap, 
   SiTailwindcss, 
   SiVercel, 
-  SiFigma 
+  SiFigma,
+  SiVite 
 } from "react-icons/si";
 
 // Componente pequeño para el Tooltip
@@ -35,6 +37,20 @@ const Tooltip = ({ text }) => (
 
 const projectsData = [
   {
+    title: "FullSabor – App de Gestión Gastronómica",
+    description: "Plataforma web enfocada en la experiencia del usuario para el sector gastronómico, diseñada con una estética limpia y minimalista. Desarrollé una interfaz interactiva optimizada para el rendimiento utilizando React 19 y Vite 8, integrando componentes modulares que facilitan la gestión de pedidos.",
+    tags: ["React", "Tailwind CSS", "Vite", "Vercel"],
+    techIcons: [
+      { icon: <SiReact />, name: "React.js" },
+      { icon: <SiTailwindcss />, name: "Tailwind CSS" },
+      { icon: <SiVite />, name: "Vite" },
+      { icon: <SiVercel />, name: "Vercel" }
+    ],
+    mainIcon: <FaUtensils />, 
+    github: "https://github.com/LuiggiMejias-dev/FullSabor",
+    demo: "https://full-sabor.vercel.app/"
+  },
+  {
     title: "FitZone – Nutrición y Rendimiento",
     description: "Plataforma web interactiva para un centro de entrenamiento y gimnasio premium. Diseñé una interfaz moderna con un módulo de productos integrado, el cual incluye un flujo de compra optimizado mediante modales, lógica de descuentos en tiempo real y pedidos directos por WhatsApp.",
     tags: ["React (Vite)", "CSS Modules", "Dynamic Logic", "Vercel"],
@@ -45,7 +61,7 @@ const projectsData = [
     ],
     mainIcon: <FaDumbbell />, 
     github: "https://github.com/LuiggiMejias-dev/Gimnasio",
-    demo: "https://gimnasio-fitzone.vercel.app/" // Cambia esta URL por tu link real de Vercel
+    demo: "https://gimnasio-fitzone.vercel.app/"
   },
   {
     title: "Sistema POS – MiniMarket",
@@ -132,7 +148,6 @@ export default function Projects() {
               <h3 className={styles.cardTitle}>{project.title}</h3>
               <p className={styles.cardDescription}>{project.description}</p>
               
-              {/* Contenedor de Iconos con Tooltips */}
               <div className={styles.techIconRow}>
                 {project.techIcons.map((item, iIndex) => (
                   <div 
