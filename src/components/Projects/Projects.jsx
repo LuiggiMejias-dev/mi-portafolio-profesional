@@ -38,7 +38,7 @@ const Tooltip = ({ text }) => (
 const projectsData = [
   {
     title: "FullSabor – App de Gestión Gastronómica",
-    description: "Plataforma web enfocada en la experiencia del usuario para el sector gastronómico, diseñada con una estética limpia y minimalista. Desarrollé una interfaz interactiva optimizada para el rendimiento utilizando React 19 y Vite 8, integrando componentes modulares que facilitan la gestión de pedidos.",
+    description: "Plataforma web enfocada en la experiencia del usuario para el sector gastronómico, diseñada con una estética limpia y minimalista. Desarrollé una solución escalable centrada en la gestión eficiente de pedidos, priorizando tiempos de respuesta mínimos y una interfaz intuitiva que optimiza el flujo de trabajo operativo.",
     tags: ["React", "Tailwind CSS", "Vite", "Vercel"],
     techIcons: [
       { icon: <SiReact />, name: "React.js" },
